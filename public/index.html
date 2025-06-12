@@ -2,16 +2,45 @@
 <html lang="es">
   <head>
     <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#4F46E5" />
     <meta
       name="description"
       content="Sitio web profesional de Vinicio Valdez, desarrollador de sistemas a medida y soluciones digitales para empresas."
     />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
     <title>Vinicio Valdez | Soluciones Digitales</title>
+
+    <style>
+      .preview-gallery {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin: 40px auto;
+        max-width: 800px;
+        padding: 0 20px;
+      }
+
+      .preview-gallery img {
+        width: 100%;
+        border-radius: 12px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        object-fit: cover;
+      }
+
+      @media (min-width: 768px) {
+        .preview-gallery {
+          flex-direction: row;
+        }
+      }
+    </style>
   </head>
   <body>
     <noscript>Debes activar JavaScript para ver este sitio correctamente.</noscript>
     <div id="root"></div>
+
   </body>
 </html>
